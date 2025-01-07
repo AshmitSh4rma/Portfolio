@@ -1,197 +1,200 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ashmit Sharma's Cybersecurity Portfolio">
+    <title>Ashmit Sharma | Cybersecurity Portfolio</title>
 
-	<!--/ /---- Put your name in the title of the page ----/ /-->
-	<title>Put Your Name Here</title>
-	
-	<!--/ /-------- Normalize CSS --------/ /-->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
-	
-	<!--/ /-------- Google Fonts --------/ /-->
-	<!-- Add a link to google fonts here if you want them -->
-	
-	<!--/ /-------- Font Awesome --------/ /-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
 
-	<!--/ /-------- Your Styles --------/ /-->
-	<link href="styles.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-	<!--/ /---Put a short description for your site below. 20 words or less---/ /-->
-	<meta description="A short description for your site...">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-	<!--/ /-------- Needed For Mobile Devices --------/ /-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- Styles -->
+    <style>
+        body {
+            font-family: 'VT323', monospace;
+            margin: 0;
+            background-color: #000000;
+            color: #00ff00;
+            line-height: 1.8;
+        }
+        header {
+            background-color: #000000;
+            text-align: center;
+            padding: 1.5rem 0;
+            color: #00ff00;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.5rem;
+        }
+        .wrapper {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #000000;
+            border: 2px solid #00ff00;
+            border-radius: 8px;
+            position: relative;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #00ff00;
+            margin-bottom: 1.5rem;
+            text-decoration: underline;
+        }
+        p {
+            margin: 1rem 0;
+            color: #ff4444;
+        }
+        .projects, .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        article {
+            background-color: #000000;
+            border: 2px solid #00ff00;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        article h3 {
+            color: #00ff00;
+        }
+        footer {
+            background-color: #000000;
+            color: #00ff00;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        footer a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        .contact-info {
+            color: #00ff00;
+        }
+        .contact-info a {
+            color: #ff4444;
+            text-decoration: none;
+        }
+    </style>
 </head>
-
 <body>
-	
-    <!-- ------------------------------------------------------
-    The site is designed to be mobile first. The wrapper elements
-	are in place for when you get to desktop size to contain the 
-	content.
-    ------------------------------------------------------- -->
-    
-	<header class="primary">
-        <div class="wrapper">
-            
-			<div class="logo-container">
-				<h1>Your<br>Name<br>Portfolio</h1>
-
-				<!-- ------------------------------------------------------
-				Note that the image of the logo is linked to the home page.
-				------------------------------------------------------- -->
-				<a href="index.html"><img src="https://dummyimage.com/175/c4c4c4/fff&text=logo" alt="logo image" id="logo"></a>
-			</div>
-            
-            
-			<!-- ------------------------------------------------------
-            The navigation here is linking to the sections further down
-            the page.
-            ------------------------------------------------------- -->
-			<nav id="mainnav">
-            	<ul>
-                	<li><a href="#work">Work</a></li>
-                    <li><a href="#about-contact">About</a></li>
-                    <li><a href="#about-contact">Contact</a></li>
-                </ul>
-            </nav>
-            
-        </div>
-        
+    <header>
+        <h1>Ashmit.Sh4rma</h1>
+        <p>Cyber Security Engineer | Bug Hunter | CSE @ PES University</p>
     </header>
-    
-    <!-- ------------------------------------------------------
-    This is the work section, which has two parts: the featured
-	section and the projects section.
-    ------------------------------------------------------- -->
-    
-    <section id="work">
-   		<div class="wrapper">
-        	<h2>Check Out My Best Projects</h2>
-        	<section class="featured">
+
+    <div class="wrapper">
+        <section id="about">
+            <h2>About Me</h2>
+            <p><strong style="color:#00ff00;">I&#39;m Ashmit Sharma; A Cyber Sec Aficionado And A Linux Enthusiast Currently Pursuing My Computer Science Degree At PES University. I&#39;m Deeply Invested In Testing And Challenging Digital Security.</strong></p>
+
+            <p>
+                🛡️ <strong style="color:#00ff00;">Vulnerability Assessment:</strong><br>
+                I Can Proficiently Identify And Assess Vulnerabilities Within Computer Systems, Leveraging A Diverse Toolkit Of Methodologies And Tools To Comprehensively Analyze Weaknesses, Ensuring Robust Protection Against Potential Threats.
+            </p>
+            <p>
+                ⚔️ <strong style="color:#00ff00;">Penetration Testing:</strong><br>
+                Experienced In Performing Penetration Tests, I Simulate Real-World Cyber Attacks To Uncover Security Loopholes. Through Meticulous Testing And Analysis, I Provide Actionable Insights To Fortify Systems And Prevent Unauthorized Access Or Data Breaches.
+            </p>
+            <p>
+                🐧 <strong style="color:#00ff00;">Experience With Linux:</strong><br>
+                I Try To Effectively Utilize Command-Line Interface To Troubleshoot And Enhance System Functionalities And Engaging With The Linux Community Inspires My Ongoing Quest For Learning And Collaboration.
+            </p>
+            <p>
+                💻 <strong style="color:#00ff00;">Computer Systems & Network Fundamentals:</strong><br>
+                Having A Fair Grasp Of Operating Systems And Computer Systems&#39; Fundamentals, I Understand Their Roles In Managing Hardware, Software Resources, And Network Basics. I Comprehend Network Architecture, Data Transmission, Protocols & Security Measures, Driving My Continuous Exploration In This Dynamic Field.
+            </p>
+            <p>
+                🎓 <strong style="color:#00ff00;">Hackathons, Certifications, & Club Participation:</strong><br>
+                In The Fast-Paced World Of Tech, Participating In Hackathons Refined My Problem-Solving Capabilities. Certifications In Various Fields Fortified My Technical Understanding, Empowering Me With Hands-On Skills To Tackle Complex Challenges. Besides My Involvement In Club Activities Has Given Me Invaluable Opportunities To Develop Leadership Skills, Foster Teamwork, And Broaden My Horizons In Diverse Fields Of Interest.
+            </p>
+            <p>
+                🌐 <strong style="color:#00ff00;">Learning, Collaboration // Growth At PES University:</strong><br>
+                As A Student At PES University, I&#39;m Dedicated To Continuous Learning, Improving My Skillset, And Fostering A Collaborative Environment. Valuing Knowledge-Sharing As An Integral Part Of My Growth, I Aspire To Build A Network Amidst My Peers To Collectively Grow Both Personally And Professionally.
+            </p>
+
+            <p><strong style="color:#00ff00;">Thank You For Taking Out Your Time To Learn About Me!</strong></p>
+        </section>
+
+        <section id="projects">
+            <h2>Key Projects</h2>
+            <div class="projects">
                 <article>
-                	<!-- ------------------------------------------------------
-                    Link the image below to the detail page for this project.
-                    Use the page.html file to make that page. Also link the 
-                    anchor tag in the paragraph below to the same page.
-                    ------------------------------------------------------- -->
-                	<a href="#"><img src="https://dummyimage.com/510x300/c4c4c4/fff&text=Featured+Project" alt="image"></a>
+                    <h3>Vulnerability Scanner</h3>
+                    <p><strong style="color:#00ff00;">Role:</strong> Developer</p>
+                    <p><strong style="color:#00ff00;">Description:</strong> Built a Python-based tool to identify OWASP vulnerabilities in web applications, integrating it with Burp Suite for advanced scanning.</p>
                 </article>
-                
                 <article>
-                	<h3>Title of Project</h3>
-                    <h4>Challenge Statement</h4>
-                    <p>Before they sold out single-origin coffee fingerstache sartorial freegan master cleanse. Sartorial blog fap, shoreditch scenester tacos poutine. Bespoke brunch viral listicle, keffiyeh celiac paleo organic scenester next level cliche put a bird on it cardigan. Forage kombucha pitchfork literally. Art party narwhal food truck selfies, XOXO leggings distillery four loko fap. An additional sentence.</p> <p><a href="#">Find out how I solved this problem</a></p> 
+                    <h3>Dark Web Threat Intelligence Database</h3>
+                    <p><strong style="color:#00ff00;">Role:</strong> Co-Developer</p>
+                    <p><strong style="color:#00ff00;">Description:</strong> Created a database for analyzing leaked credentials and tracking black market activity, complete with Streamlit GUI.</p>
                 </article>
-            </section> <!-- end row -->
-            
-            
-            <!-- ------------------------------------------------------
-            The projects section is for additional projects. I put four in
-			here, but it could be more, or less. You just have to pay
-			attention to how they wrap, and how many you want per row.
-            
-            Note that each image should be linked to the page with more
-            detailed information about that project. You can use a copy of
-            page.html to create those pages.
-            ------------------------------------------------------- -->
-            
-            <section class="projects">
-            
-            	<article>
-                	<h3>Project Title</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="image"></a>
-                    <p><strong>Role:</strong> Designer</p>
-                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
-                </article>
-                
                 <article>
-                	<h3>Project Title</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="image"></a>
-                    <p><strong>Role:</strong> Designer</p>
-                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
+                    <h3>Bug Bounty Automation</h3>
+                    <p><strong style="color:#00ff00;">Role:</strong> Researcher</p>
+                    <p><strong style="color:#00ff00;">Description:</strong> Automated XSS, CSRF, and SQL injection testing for bug bounty programs using custom scripts and existing tools.</p>
                 </article>
-                
-                <article>
-                	<h3>Project Title</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="image"></a>
-                    <p><strong>Role:</strong> Designer</p>
-                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
-                </article>
-				
-				<article>
-                	<h3>Project Title</h3>
-                	<a href="#"><img src="https://dummyimage.com/340x200/c4c4c4/fff&text=Another+Project" alt="image"></a>
-                    <p><strong>Role:</strong> Designer</p>
-                    <p><strong>Description:</strong> Website for a restaurant and redesigned the online menu.</p>
-                </article>
-            
-            </section><!-- end row -->
-            
-        </div> <!-- end work wrapper -->
-    </section>
-    
-    
-    <!-- ------------------------------------------------------
-    This is the about and contact section. The links in the main
-    navigation link to this section. 
-    ------------------------------------------------------- -->
-    
-    <section id="about-contact" class="secondary">
-   		<div class="wrapper">
-        	
-			<div class="profile-photo">
-            	<img src="http://placehold.it/260?text=Your+Photo" alt="image">
             </div>
-			
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <div class="certifications">
+                <article>
+                    <h3>eLearnSecurity Junior Penetration Tester (eJPT)</h3>
+                    <p><strong style="color:#00ff00;">Issued:</strong> August 2024</p>
+                    <p><strong style="color:#00ff00;">Credential ID:</strong> 110985637</p>
+                    <p><strong style="color:#00ff00;">Skills:</strong> Cybersecurity, Network Security, Web Application Security</p>
+                    <p><a href="https://certs.ine.com/ebbb1f6d-5bd7-4f3a-9e7f-958f6ec1d2cb#acc.t7Fd8fuA" target="_blank" style="color:#00ff00;">View Credential</a></p>
+                </article>
+                <article>
+                    <h3>INE Certified Cloud Associate (ICCA)</h3>
+                    <p><strong style="color:#00ff00;">Issued:</strong> May 2024</p>
+                    <p><strong style="color:#00ff00;">Credential ID:</strong> 103178454</p>
+                    <p><strong style="color:#00ff00;">Skills:</strong> Cloud Computing</p>
+                    <p><a href="https://certs.ine.com/ea680e2d-c50a-4249-9761-772bfa1ca1be#acc.NZ8PIQDz" target="_blank" style="color:#00ff00;">View Credential</a></p>
+                </article>
+                <article>
+                    <h3>Ethical Hacker</h3>
+                    <p><strong style="color:#00ff00;">Issued By:</strong> Cisco</p>
+                    <p><strong style="color:#00ff00;">Skills:</strong> Cybersecurity, Network Security, Web Application Security</p>
+                    <p><a href="https://www.credly.com/badges/d33eb14f-5b1c-4bca-88c0-84eae7d65619/linked_in_profile" target="_blank" style="color:#00ff00;">View Credential</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2>Publications</h2>
             <article>
-				<h2>About Me</h2>
-				<p>Fixie owner, father of 3, fender owner, reclaimed wood collector and javascripter. Acting at the junction of minimalism and intellectual purity to create great work for living breathing human beings. I'm a designer and this is my work.</p>
-				<h3>Skills</h3>
-				<p>I am particularly good at BLAH BLAH and really enjoy BLAH. I am currently learning BLAH and I'm very exited about BLAH BLAH.</p>
-			</article> 
-                
-			<article>
-				<h2>Contact Me!</h2>
-				<p>I am currently looking for opportunities to work on a team at a design shop. Please feel free to contact me by phone, email or through the usual social media channels.</p>
+                <h3>AI X VAPT: Enhancing Vulnerability Assessment and Penetration Testing Through Artificial Intelligence</h3>
+                <p><strong style="color:#00ff00;">Published:</strong> January 1, 2024</p>
+                <p style="color:#ff4444;">This research article explores the integration of Artificial Intelligence (AI) into Vulnerability Assessment and Penetration Testing (VAPT). It delves into the potential for AI to significantly enhance traditional VAPT methodologies, offering a comprehensive analysis, real-world case studies, and forward-looking insights into the future trajectory of AI-driven cybersecurity.</p>
+            </article>
+        </section>
 
-				<!-- ------------------------------------------------------
-				Be sure to encode your email address at this site, so you 
-				don't get spam. http://wbwip.com/wbw/emailencoder.html
-				------------------------------------------------------- -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p><strong class="contact-info">Email:</strong> <a href="mailto:ashmit.sh4rma@gmail.com">ashmit.sh4rma@gmail.com</a></p>
+            <p><strong class="contact-info">LinkedIn:</strong> <a href="https://www.linkedin.com/in/ashmitsh4rma/" target="_blank">https://www.linkedin.com/in/ashmitsh4rma/</a></p>
+        </section>
+    </div>
 
-				<p><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:&#101;&#109;&#097;&#105;&#108;&#064;&#115;&#111;&#109;&#101;&#119;&#104;&#101;&#114;&#101;&#046;&#099;&#111;&#109;">&#101;&#109;&#097;&#105;&#108;&#064;&#115;&#111;&#109;&#101;&#119;&#104;&#101;&#114;&#101;&#046;&#099;&#111;&#109;</a><br>
-				<i class="fa fa-phone" aria-hidden="true"></i> 123-456-7890</p>
-
-				<!-- ------------------------------------------------------
-				You can see here that I have included font-awesome. It is used
-				to create the icons above and below. You can go to the font-awesome
-				website to see the available icons and swap some out.
-				------------------------------------------------------- -->
-
-				<p class="social">
-					<a href="#"><i class="fab fa-facebook"></i></a>
-					<a href="#"><i class="fab fa-linkedin"></i></a> 
-					<a href="#"><i class="fab fa-twitter-square"></i></a>
-				</p>
-			</article>
-                   
-        </div>
-    </section>
-    
-    
-    <!-- ------------------------------------------------------
-    The footer section is not doing much on this page. Add more
-    content if necessary.
-    ------------------------------------------------------- -->
-    <footer class="primary">
-    	<div class="wrapper">
-        	<p class="centered">&copy; 2019 all rights reserved</p>
-        </div>
+    <footer>
+        <p>&copy; 2025 Ashmit Sharma | All Rights Reserved</p>
     </footer>
-
 </body>
 </html>
