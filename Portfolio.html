@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ashmit Sharma</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: black;
+      height: 100%;
+      width: 100%;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+    #matrix-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    #center-text {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    #typewriter::after {
+      content: "_";
+      animation: blink 0.7s infinite;
+    }
+
+    #typewriter.done::after {
+      content: "";
+      animation: none;
+    }
+
+    @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="matrix-canvas"></canvas>
+  <div id="center-text">
+    <h1 id="typewriter"></h1>
+  </div>
+  <script>
+    const canvas = document.getElementById('matrix-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let fontSize = 16;
+    let columns;
+    let drops;
+
+    function setupMatrix() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+      columns = Math.floor(canvas.width / fontSize);
+      drops = Array(columns).fill(1);
+    }
+
+    function draw() {
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.15)';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      ctx.font = `${fontSize}px monospace`;
+
+      for (let i = 0; i < drops.length; i++) {
+        const char = Math.random() > 0.5 ? '1' : '0';
+        const hue = (i * 12 + drops[i] * 2) % 360;
+        ctx.fillStyle = `hsl(${hue}, 100%, 50%)`;
+        ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+
+        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+          drops[i] = 0;
+        }
+        drops[i]++;
+      }
+    }
+
+    setupMatrix();
+    setInterval(draw, 30);
+    window.addEventListener('resize', setupMatrix);
+
+    const text = "Welcome To My Website";
+    const typeTarget = document.getElementById("typewriter");
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        typeTarget.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, 100);
+      } else {
+        typeTarget.classList.add("done");
+      }
+    }
+    type();
+  </script>
+</body>
+</html>
